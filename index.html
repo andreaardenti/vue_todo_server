@@ -10,15 +10,13 @@
           box-sizing: border-box;
         }
         
-        /* Create four equal columns that floats next to each other */
         .column {
           float: left;
           width: 20%;
           padding: 10px;
-          height: 20px; /* Should be removed. Only for demonstration */
+          height: 20px;
         }
         
-        /* Clear floats after the columns */
         .row:after {
           content: "";
           display: table;
@@ -51,8 +49,9 @@
             <button v-on:click="newTodo">NEW TODO!</button>
             <button v-on:click="getTodo">show todos</button>
             <br>
+            <br>
             <input v-model="id" placeholder="id"> 
-            <button v-on:click="deleteTodo">delete by id</button>
+            <button v-on:click="deleteTodo">delete todo by id</button>
             <br>
             <input v-model="user" placeholder="user"> 
             <button v-on:click="getTodoByUser">show todos by user</button>
